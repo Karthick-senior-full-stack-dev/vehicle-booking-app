@@ -25,7 +25,7 @@ This is a full-stack application built for a technical assessment. The app allow
 ### Backend:
 - Node.js with Express.js
 - Sequelize ORM
-- PostgreSQL (or any SQL DB as required)
+- MySQL
 
 ---
 
