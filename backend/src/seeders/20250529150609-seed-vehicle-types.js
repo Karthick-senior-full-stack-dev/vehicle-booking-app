@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     return queryInterface.bulkInsert('VehicleTypes', [
       {
         name: 'Hatchback',
@@ -36,7 +36,7 @@ module.exports = {
     ]);
   },
 
-  async down (queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('VehicleTypes', null, {});
+  async down(queryInterface, Sequelize) {
+    return queryInterface.sequelize.query('TRUNCATE TABLE "VehicleTypes" RESTART IDENTITY CASCADE;');
   }
 };

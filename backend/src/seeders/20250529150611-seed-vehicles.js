@@ -21,6 +21,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Vehicles', null, {});
+    return queryInterface.sequelize.query('TRUNCATE TABLE "Vehicles" RESTART IDENTITY CASCADE;');
   }
 };

@@ -25,7 +25,9 @@ router.get('/vehicles', async (req, res) => {
     if (!typeId) {
       return res.status(400).json({ error: 'typeId query param is required' });
     }
-    const vehicles = await Vehicle.findAll({ where: { vehicleTypeId: typeId } });
+    const vehicles = await Vehicle.findAll({
+      where: { vehicleTypeId: parseInt(typeId, 10) }
+    });
     res.json(vehicles);
   } catch (error) {
     console.error('Error fetching vehicles:', error);

@@ -13,7 +13,7 @@ Update src/config/config.js with your DB credentials.
 Manually create your database in MySQL (e.g., vehicle_booking_db).
 
 5. Run migrations
-npx sequelize-cli db:migrate
+npx sequelize-cli db:migrate 
 
 6. Seed initial data
 npx sequelize-cli db:seed:all
