@@ -15,7 +15,7 @@ Manually create your database in MySQL (e.g., vehicle_booking_db).
 5. Run migrations
 npx sequelize-cli db:migrate 
 
-6. Seed initial data
+6. Seed initial data (or) can use the vehicle_booking_db.sql file to import the data
 npx sequelize-cli db:seed:all
 
 7. Start the backend server
