@@ -31,6 +31,7 @@ This is a full-stack application built for a technical assessment. The app allow
 
 ## 🗂️ Project Structure
 
+```bash
 vehicle-booking-app/
 ├── backend/
 │   ├── migrations/
@@ -45,7 +46,7 @@ vehicle-booking-app/
 │   │   ├── pages/
 │   │   └── App.js
 ├── README.md
-
+```
 ## 📷 Screenshot's
 
 ![Screenshot 2025-06-24 071752](https://github.com/user-attachments/assets/5144a2e5-3445-4967-a87f-5f34cdd43c97)
